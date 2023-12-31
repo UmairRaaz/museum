@@ -9,7 +9,7 @@ const AudioGuide = () => {
       <h1 className="text-4xl font-extrabold mt-10">Audio Guide</h1>
       <div className="mt-10">
         <AudioCards
-          image="/building.jpg"
+          image="/buildingUpdated.jpg"
           icon={<HiOutlineBuildingLibrary size={20} />}
           heading={"building"}
           text={"Acropolis of Athens"}

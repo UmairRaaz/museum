@@ -9,9 +9,9 @@ const About = () => {
   const width = isMobile ? 300 : 450;
   const height = isMobile ? 300 : 450;
   return (
-    <motion.div id="history" className="h-screen w-full md:border border-gray-500 rounded-md md:relative">
+    <motion.div id="history" className="h-screen  w-full md:border border-gray-500 rounded-md md:relative">
       <motion.div
-        className="md:absolute md:left-80 md:-top-14"
+        className="md:absolute md:left-80  md:-top-14"
         initial={{ scale: 0.2, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
