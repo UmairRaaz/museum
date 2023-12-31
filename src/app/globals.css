@@ -1,27 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+body{
+  background: rgb(26,30,36);
+  color: white;
+}
+.loader  {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  animation: l25 1s infinite;
+}
+.loader::before {
+  content:"Loading...";
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes l25{
+  0%,12.5% {transform: translate(10px,0)}
+  13%,25%  {transform: translate(4px,-4px)}
+  26%,37.5%{transform: translate(2px,8px)}
+  38%,50%  {transform: translate(12px,-6px)}
+  51%,62.5%{transform: translate(0,12px)}
+  63%,75%  {transform: translate(-8px,-4px)}
+  76%,86.5%{transform: translate(-12px,6px)}
+  87%,100% {transform: translate(6px,0)}
 }
